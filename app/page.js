@@ -34,11 +34,11 @@ export default function Home() {
         Movies Database
       </h2>
 
-      <div className="flex items-center  my-3 ">
+      <div className="flex items-center w-full justify-center my-3 ">
         <input
           type="text"
           placeholder="Enter Movie Title"
-          className="p-1 text-md rounded-l w-screen md:max-w-md  max-w-xs focus:outline-none"
+          className="p-1 text-md rounded-l  w-full focus:outline-none"
           value={inputValue}
           onChange={handleInputChange}
         />
