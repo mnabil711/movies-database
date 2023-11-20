@@ -23,7 +23,7 @@ export default function Home() {
       setMovies(data.results);
       setInputValue("");
     } catch (error) {
-      console.log("Error fetching movies:", error);
+      console.log("Error fetching:", error);
       return null;
     }
   };
