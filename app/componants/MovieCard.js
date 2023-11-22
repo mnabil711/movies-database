@@ -1,15 +1,15 @@
 "use client";
 import React from "react";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const MovieCard = ({ title, imgPath, overview, vote, release }) => {
   const base_img = "https://image.tmdb.org/t/p/w500";
 
   const notify = () => {
-    toast.error('NO Trailer', {
+    toast.error("Sorry,Trailer Is Not Available", {
       position: toast.POSITION.TOP_RIGHT,
-      autoClose: 3000, // Time in milliseconds to close the notification automatically
+      autoClose: 3000,
     });
   };
 
@@ -17,7 +17,11 @@ const MovieCard = ({ title, imgPath, overview, vote, release }) => {
     <div className=" relative  bg-slate-50 rounded-lg shadow-xl pb-10">
       <img
         className=" rounded-t-lg w-full h-64"
-        src={imgPath?`${base_img}${imgPath}`:"https://westsiderc.org/wp-content/uploads/2019/08/Image-Not-Available.png"}
+        src={
+          imgPath
+            ? `${base_img}${imgPath}`
+            : "https://westsiderc.org/wp-content/uploads/2019/08/Image-Not-Available.png"
+        }
         alt="movie pic"
       />
 
